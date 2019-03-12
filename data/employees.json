@@ -1,0 +1,47 @@
+[{
+	"empid": 1527753,
+	"first_name": "Abhinav",
+	"middle_name": "Narayan",
+	"last_name": "Sinha",
+	"last_project": "Bank Of America",
+	"designation": "Front-End Developer",
+	"available": true,
+	"experience": 5,
+	"rating": 4.8,
+	"thumb": "content/profile_thumbnail/man.png"
+},
+ {
+	"empid": 1527754,
+	"first_name": "Richesh",
+	"middle_name": "",
+	"last_name": "Gaurav",
+	"last_project": "Western Union",
+	"designation": "Back-End Developer",
+	"available": true,
+	"experience": 4,
+	"rating": 3.5,
+	"thumb": "content/profile_thumbnail/boy.png"
+},
+{
+	"empid": 1525753,
+	"first_name": "Jatin",
+	"middle_name": "",
+	"last_name": "Sharma",
+	"last_project": "none",
+	"designation": "Tester",
+	"available": true,
+	"experience": 11,
+	"rating": 5,
+	"thumb": "content/profile_thumbnail/man.png"
+}, {
+	"empid": 1527633,
+	"first_name": "Pradyumna",
+	"middle_name": "",
+	"last_name": "Das",
+	"last_project": "Ignite",
+	"designation": "Front-End Developer",
+	"available": true,
+	"experience": 0,
+	"rating": 4.3,
+	"thumb": "content/profile_thumbnail/boy.png"
+}]

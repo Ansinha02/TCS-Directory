@@ -1,0 +1,27 @@
+  <div class="content">
+
+    <button ng-click="order = '-rating'" >Order by Rating</button>
+    <button ng-click="order = '-experience'" >Order by Experience</button>
+
+    <input type="text" placeholder="Search" ng-model="search" />
+
+  <ul>
+    <li ng-repeat="employee in employees | orderBy: order | filter: search" ng-show="employee.available">
+      <img ng-src="{{employee.thumb}}" style="margin: -12px 10px 0, 0; float: left; width: 50px"/>
+      <a ng-href='#!/{{employee.empid}}'><h3 ng-click="sendData(employee)"> {{employee.first_name}} - {{employee.experience}} years </h3> </a> 
+
+      <div class="remove" ng-click="removeEmployee(employee)">x</div>
+      <span>{{employee.designation}}</span>
+    </li>
+  </ul>
+  <form action="#!/addNewEmployee">
+    <!-- <input type="text" placeholder="Employee Id" ng-model="newEmployee.empid" />
+    <input type="text" placeholder="First Name" ng-model="newEmployee.first_name" />
+    <input type="text" placeholder="Last Name" ng-model="newEmployee.last_name" />
+    <input type="text" placeholder="Last Project Name" ng-model="newEmployee.last_project" />
+    <input type="text" placeholder="Previous Designation" ng-model="newEmployee.designation" />
+    <input type="text" placeholder="Experience in Years" ng-model="newEmployee.experience" />
+    <input type="text" placeholder="Annual Rating" ng-model="newEmployee.rating" /> -->
+    <input type="submit" value="Add new Employee" />
+  </form>
+</div>

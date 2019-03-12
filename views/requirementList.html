@@ -1,0 +1,29 @@
+<h1>Just an Example</h1>
+
+
+<button type="button" id="swapData" class="btn btn-success" ng-click="swapData()">Swap Data</button>
+
+<button type="button" id="removeFirstRow" class="btn btn-success" ng-click="removeFirstRow()">Remove First Row</button>
+<button type="button" id="reset" class="btn btn-success" ng-click="reset()">Reset</button>
+  <br>
+  <br>
+
+<div class="grid" ui-grid-pagination ui-grid="gridOptions" >
+
+  </div>
+    <div class="content row">
+  <form>
+    <div class="col-sm-4">
+      <input type="text" placeholder="Enter Project Id" ng-model="newProject.id" />
+      </div>
+    <div class="col-sm-4">
+      <input type="text" placeholder="Project Name" ng-model="newProject.name" />
+      </div>
+    <div class="col-sm-4">
+      <input type="text" placeholder="No. Of Employees Required" ng-model="newProject.requirement" />
+      </div>
+      <center>
+        <button type="submit" id="addData" class="btn btn-info" ng-click="addData()">Add Data</button>
+        </center>
+</form>
+    </div>

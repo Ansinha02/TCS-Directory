@@ -1,0 +1,20 @@
+<div styele="align: center;" class="content" ng-repeat="employee in employees" ng-if="empid == employee.empid">
+  <h1>{{employee.first_name}} {{employee.last_name}}</h1>
+  <hr style="color: #0066ff;" />
+  <div class="row">
+
+    <div class="col-lg-4 col-md-4 col-sm-4">
+        <img class=" img-circle" ng-src="{{employee.thumb}}" alt="img:{{employee.first_name}} {{employee.last_name}}" style="align:center; margin: auto; width:75%;" />
+    </div>
+
+    <div class="col-lg-8 col-md-8 col-sm-8">
+      <br>  <label>Full Name: </label> <label>{{employee.first_name}} {{employee.middle_name}} {{employee.last_name}}</label><br />
+      <label>Employee Id: </label> <label>{{employee.empid}}</label><br />
+      <label>Last Project: </label> <label>{{employee.last_project}}</label><br />
+      <label>Designation: </label> <label>{{employee.designation}}</label><br />
+      <label>Experience: </label> <label>{{employee.experience}} years</label><br />
+      <label>Rating: </label> <label>{{employee.rating}}/5</label><br />
+    </div>
+
+  </div>
+</div>
